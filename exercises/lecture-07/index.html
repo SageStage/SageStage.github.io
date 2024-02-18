@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exersises 07</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+    <style>
+      .negative {
+        background-image: linear-gradient(
+          to left,
+          rgb(0, 0, 255) -50%,
+          rgb(0, 0, 255) -10%,
+          rgb(0, 0, 255) 0%,
+          rgb(0, 0, 255) 100%,
+          rgb(0, 0, 255) 150%
+        );
+      }
+
+      .percent {
+        background: linear-gradient(
+          to bottom,
+          rgb(0, 255, 0) 2em,
+          rgba(9, 199, 9, 0.9) 4em,
+          rgba(0, 255, 0, 0.8) 8em,
+          rgba(0, 255, 0, 0.7) 16em,
+          rgba(0, 255, 0, 0.6) 32em,
+          rgba(0, 255, 0, 0.4) 64em,
+          rgba(0, 255, 0, 0.2) 128em
+        );
+      }
+
+      .radial {
+        background: radial-gradient(ellipse at center, orange, transparent),
+          radial-gradient(ellipse at center, red, transparent);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1>Gradient Text Glow</h1>
+    <div class="percent">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias culpa
+      eum explicabo, fuga quam sapiente recusandae atque dolore vero error
+      repudiandae mollitia placeat a ab voluptatum exercitationem incidunt
+      accusantium itaque?
+    </div>
+    <div class="negative">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nisi eius
+      illo reiciendis asperiores similique ab obcaecati ad sunt? Molestiae, ut
+      expedita? Voluptatibus saepe dolor laboriosam inventore cum vitae numquam?
+    </div>
+    <div class="radial">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi
+      aperiam explicabo, quos nemo accusantium blanditiis odit adipisci magnam
+      quia, laboriosam asperiores. Aperiam corrupti id temporibus laudantium
+      similique dicta amet.
+    </div>
+
+    <svg width="140" height="140">
+      <rect
+        x="20"
+        y="20"
+        width="100"
+        height="100"
+        fill="lightgray"
+        stroke="yellow"
+        stroke-width="4"
+      />
+    </svg>
+
+    <svg width="200" height="200">
+      <circle
+        cx="100"
+        cy="70"
+        r="60"
+        fill="green"
+        stroke="black"
+        stroke-width="4"
+      />
+    </svg>
+
+    <svg width="200" height="200">
+      <circle
+        cx="100"
+        cy="100"
+        r="80"
+        fill="orange"
+        stroke="black"
+        stroke-width="2"
+      />
+
+      <text x="95" y="30">12</text>
+      <text x="160" y="105">3</text>
+      <text x="95" y="175"">6</text>
+      <text x="30" y="105"">9</text>
+
+      <line
+        x1="100"
+        y1="100"
+        x2="145"
+        y2="100"
+        stroke="black"
+        stroke-width="4"
+      />
+    </svg>
+
+    <svg width="200" height="200">
+        <polygon points="100,20 120,80 180,80 130,110 150,180 100,140 50,180 70,110 20,80 80,80" />
+    </svg>
+  </body>
+</html>
